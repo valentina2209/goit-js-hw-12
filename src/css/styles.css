@@ -65,7 +65,7 @@ body {
 
 /* Стилізація кнопки Load more */
 .load-more {
-  /* display: none; */
+  display: none; 
   display: block;
   margin: 20px auto;
   padding: 10px 30px;
