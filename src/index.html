@@ -2,7 +2,8 @@
 <html lang="uk">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <!-- Адаптив -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
     <title>Image Search App</title>
     <!-- Підключення стилів бібліотек -->
     <link
@@ -26,13 +27,20 @@
           required
           autocomplete="off"
         />
-        <button type="submit">Search</button>
+      <div class="galaxy-button">
+        <button class="space-button" type="submit" >
+          <span class="backdrop"></span>
+          <span class="galaxy"></span>
+          <label class="text">Search</label>
+        </button>
+        <div class="bodydrop"></div>
+      </div>
       </form>
     </header>
-
+		
     <main>
       <ul class="gallery"></ul>
-      <button class="load-more" hidden>Load more</button> 
+      <button class="load-more btn" hidden>Load more</button> 
       <div class="loader" hidden></div>
     </main>
 
